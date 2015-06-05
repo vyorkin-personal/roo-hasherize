@@ -14,7 +14,7 @@ Rewritten almost from scratch. The main reason is to provide faster and predicta
 Add this line to your Gemfile
 
 ```ruby
-gem `roo-hasherize'
+gem 'roo-hasherize'
 ```
 
 or
@@ -32,7 +32,7 @@ hash = Roo::Hasherize.call(target, options)
 options are:
 * `keys` - Use it only if your dataset doesn't contain headers
 * `sheet` - Number of sheet to hasherize (only makes sense for spreadsheets)
-* `extension' - To explicityly specify file format
+* `extension` - To explicityly specify file format
 
 Spreadsheet type is detected by the file extension (`xls`, `xlsx`, `ods`),
 files without extension considered `csv`.
