@@ -5,7 +5,7 @@ module Roo
   # Also acts as a facade / public API
   module Hasherize
     def self.call(target, options = {})
-      Parser.call(target, options)
+      Roo::Hasherize::Parser.call(target, options)
     end
   end
 end
