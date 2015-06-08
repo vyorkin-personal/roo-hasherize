@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.homepage = 'https://github.com/vyorkin/roo-hasherize'
 
   spec.files = `git ls-files -- lib/*`.split("\n")
-  spec.files += %w(README.md LICENSE.txt)
+  spec.files += %w(README.md LICENSE)
   spec.bindir = 'exe'
   spec.executables = `git ls-files -- exe/*`.split("\n").map { |file| File.basename(file) }
 
