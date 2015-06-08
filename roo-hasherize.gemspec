@@ -25,7 +25,7 @@ Gem::Specification.new do |spec|
   spec.add_runtime_dependency 'roo-xls', '~> 1.0', '>= 1.0.0'
   spec.add_runtime_dependency 'activesupport', '>= 3.0', '< 5.0'
 
-  spec.add_development_dependency 'bundler', '~> 1.9', '>= 1.9.0'
+  spec.add_development_dependency 'bundler', '~> 1.7', '>= 1.7.6'
   spec.add_development_dependency 'rake', '~> 10.0', '>= 10.0'
   spec.add_development_dependency 'rspec', '~> 3.2', '>= 3.2.0'
   spec.add_development_dependency 'rspec-its', '~> 1.2', '>= 1.2.0'
