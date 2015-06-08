@@ -28,9 +28,7 @@ module Roo
       end
 
       def parse_row(row)
-        column_bounds
-          .map { |index| [@keys[index], row[index]] }
-          .reject { |key, value| key.blank? || value.blank? }
+        @keys.zip(row).reject { |key, value| key.blank? || value.blank? }
       end
 
       def rows

@@ -17,14 +17,14 @@
 
 CommitMsg:
   HardTabs:
-    enabled: false
+    enabled: true
 
 PreCommit:
   Rubocop:
     enabled: true
     on_warn: fail
   HardTabs:
-    enabled: true
+    enabled: false
   Reek:
     enabled: true
   LocalPathsInGemfile:
