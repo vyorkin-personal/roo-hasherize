@@ -40,6 +40,8 @@ Spreadsheet type is detected by the file extension (`xls`, `xlsx`, `ods`),
 files without extension considered `csv`.
 Also, this can be specified explicitly with the `extension` option:
 
+All other (roo specific) options are passed as is down to a corresponding file type handler class,
+e.g. `csv_options` is passed to `Roo::CSV`
 
 ## Development
 
