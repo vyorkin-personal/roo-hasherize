@@ -17,7 +17,7 @@
 
 CommitMsg:
   HardTabs:
-    enabled: true
+    enabled: false
 
 PreCommit:
   Rubocop:

@@ -1,6 +1,7 @@
 require 'uri'
 require 'active_support/core_ext/object/blank'
 require 'active_support/hash_with_indifferent_access'
+require 'roo-xls'
 
 module Roo
   module Hasherize

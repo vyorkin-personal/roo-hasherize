@@ -21,7 +21,8 @@ Gem::Specification.new do |spec|
   spec.require_path = 'lib'
   spec.license = 'MIT'
 
-  spec.add_runtime_dependency 'roo', '>= 1.13.2'
+  spec.add_runtime_dependency 'roo', '~> 2.0', '>= 2.0.0'
+  spec.add_runtime_dependency 'roo-xls', '~> 1.0', '>= 1.0.0'
   spec.add_runtime_dependency 'activesupport', '>= 3.0', '< 5.0'
 
   spec.add_development_dependency 'bundler', '~> 1.9', '>= 1.9.0'
