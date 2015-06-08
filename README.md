@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/vyorkin/roo-hasherize.svg)](https://travis-ci.org/vyorkin/roo-hasherize)
+
 # roo-hasherize
 
 Built on top of the roo gem for easy abstraction of
