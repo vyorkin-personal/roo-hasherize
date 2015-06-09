@@ -5,11 +5,17 @@ RSpec.describe Roo::Hasherize::Parser do
   XLSX_EXPECTED = XLS_EXPECTED
 
   CSV_EXPECTED = { 'name' => 'Joe Doe', 'address' => '550 Gloiry Blvd.', 'country' => 'United States', 'bid' => '15.99', 'age' => '50' }
+  CSV_USING_NUMERIC_CONVERTER = { 'name' => 'Joe Doe', 'address' => '550 Gloiry Blvd.', 'country' => 'United States', 'bid' => 15.99, 'age' => 50 }
   TSV_EXPECTED = CSV_EXPECTED
 
   context 'parsing normal (comma-separated) CSV' do
     context 'with extension' do
       it_behaves_like 'valid parser', 'normal.csv', CSV_EXPECTED
+    end
+
+    context 'using converters' do
+      it_behaves_like 'valid parser', 'normal.csv', CSV_USING_NUMERIC_CONVERTER,
+        csv_options: { converters: :numeric }
     end
 
     context 'without extension' do
